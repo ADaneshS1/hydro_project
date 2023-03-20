@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+#blog {
+    /* display: flex;
+    justify-content: center; */
+}
 body {
     background-color: rgb(233, 233, 233);
 }
@@ -15,29 +19,22 @@ body {
 }
 
 .grid {
-    margin-top: 10px;
-    display: grid;
-    grid-template-rows: 
-    "1" "1"
-    "2" "2"
-    ;
-    gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
     font-family: 'Poppins', sans-serif;
-    margin: 150px;
+    gap: 30px;
+    margin: 50px auto;
+    justify-content: center;
 }
 
 .grid1 {
-    grid-area: 1;
     display: flex;
     flex-direction: row;
     background-color: white;
     height: 295px;
-    width: 600px;
-}
-
-.bag-img1 {
-    display: flex;
-    flex-direction: row;
+    width: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .bag-text1 {
@@ -46,50 +43,50 @@ body {
 }
 
 .img1 {
-    width: 295px;
+    width: 230px;
     height: 295px;
 }
 
 .img2 {
-    width: 295px;
+    width: 230px;
     height: 295px;
 }
 
 .img3 {
-    width: 295px;
+    width: 230px;
     height: 295px;
 }
 
 .img4 {
-    width: 295px;
+    width: 230px;
     height: 295px;
 }
 
 .grid2 {
-    grid-area: 1;
     display: flex;
     flex-direction: row;
     background-color: white;
     height: 295px;
-    width: 600px;
+    width: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .grid3 {
-    grid-area: 2;
     display: flex;
     flex-direction: row;
     background-color: white;
     height: 295px;
-    width: 600px;
+    width: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .grid4 {
-    grid-area: 2;
     display: flex;
     flex-direction: row;
     background-color: white;
     height: 295px;
-    width: 600px;
+    width: 550px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .h4-1 {
@@ -101,6 +98,8 @@ body {
 
 .h1-1 {
     margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 20px;
     font-weight: 550;
 }
@@ -109,6 +108,8 @@ body {
     font-size: 10px;
     font-weight: 100;
     margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -116,4 +117,94 @@ body {
     border-radius: 30px;
     border: none;
     margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg,  rgba(5,117,230,0.7) 19%, rgba(0,242,96,0.7) 58%);
+    color: white;
+}
+
+.bundar {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.bulat {
+    background-color: gray;
+    flex-wrap: wrap;
+    padding: 4px;
+    width: 1px;
+}
+
+@media only screen and (max-width:400px) {
+
+    /* .grid {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+    } */
+    
+    .grid1 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 90%;
+        height: 90%;
+        /* padding-bottom: 50px; */
+    }
+    
+    
+    .bag-text1 {
+        margin-top: 50px;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .img1 {
+        width: 340px;
+        height: 340px;
+    }
+    
+    .img2 {
+        width: 340px;
+        height: 340px;
+    }
+    
+    .img3 {
+        width: 340px;
+        height: 340px;
+    }
+    
+    .img4 {
+        width: 340px;
+        height: 340px;
+    }
+    
+    .grid2 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .grid3 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 90%;
+        height: 90%;
+    }
+    
+    .grid4 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 90%;
+        height: 90%;
+    }
+    
+
 }
