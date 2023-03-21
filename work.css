@@ -99,5 +99,9 @@
         display: flex;
         flex-direction: column;
     }
+
+    .lightbox  {
+        transform: translateY(30%);
+    }
 }
 
